@@ -1,0 +1,39 @@
+.feat {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  font-size: 14px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 270px;
+  }
+}
+
+.feat__plug-container {
+  width: 270px;
+  height: 120px;
+  background-color: getColor('bg-second');
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feat__name {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.feat__descr {
+  font-weight: 400;
+  line-height: 1.71;
+}

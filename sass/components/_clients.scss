@@ -1,0 +1,27 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.clients__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color $switch, color $switch;
+
+  &:hover,
+  &:focus {
+    border-color: getColor('accent');
+    color: getColor('accent');
+  }
+}

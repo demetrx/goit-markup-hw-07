@@ -1,0 +1,104 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: getColor('bg-primary');
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor('contrast');
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: flex-end;
+    margin-left: 12px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tg {
+    margin-left: 10px;
+    display: block;
+    height: 24px;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border-color $switch;
+
+    &:focus-within {
+      outline: 0;
+      border-color: getColor('accent');
+      color: getColor('contrast');
+    }
+  }
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: getColor('contrast');
+
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin-top: 9px;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color $switch;
+
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
+  }
+}
+
+.footer__second-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
+.footer__socials-link {
+  color: getColor('contrast');
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer__third-column {
+  display: flex;
+  align-items: flex-start;
+  height: 86px;
+}
